@@ -1,0 +1,645 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 100px;
+    
+}
+
+body {
+    font-family: 'segoe UI';
+    scroll-padding-top: 100px;
+    
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 5rem;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 2.0);
+}
+
+#ContainerPrimario {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-bar {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 24px;
+    width: 100%;
+    font-weight: bold;
+    padding: 5px;
+    border-bottom: 5px solid orange;
+    justify-content: space-between;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+}
+.linksGroup{
+    display: flex;
+
+}
+
+@media(max-width: 1500px){
+    .top-bar{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.imagemtop {
+    height: 70px;
+
+}
+
+.links {
+    padding-left: 15px;
+    color: black;
+
+}
+
+.links:hover {
+    color: orange;
+    font-size: 27px;
+}
+
+.parallax {
+    background-image: url(./Imagens/Fundo_Principal.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    page-break-before: always;
+}
+
+.parallax2 {
+    background-color: black;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto; 
+    position: relative; 
+    
+    
+}
+
+
+.image {
+    background-image: url('./Imagens/Fundo_Resumo.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 40%;
+    height: 470px;
+    display: flex;
+
+}
+
+h2 {
+    color: darkorange;
+    font-family: italic;
+}
+
+.conteiner {
+    color: white;
+    display: flex;
+    font-size: 14px;
+    letter-spacing: .1px;
+
+}
+
+.conteiner p {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+
+.textos {
+    margin: 10px;
+    padding: 10px;
+    height: fit-content;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+
+}
+
+
+
+
+.parallax3 {
+    background-image: url(./Imagens/Fundo_Catalago.jpg);
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 20px;
+
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+#nav {
+    color: white;
+    background-color: transparent;
+}
+
+#nav h4 {
+    color: darkorange;
+    font-size: 25px;
+    display: flex;
+    font-family: italic;
+}
+
+#nav li {
+
+    list-style-type: disc;
+    text-align: left;
+    color: black;
+
+}
+
+
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.container1 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 50px;
+
+}
+
+.catalogo {
+    border: 2px solid black;
+    width: 400px;
+    height: 700px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+
+
+@media(max-width: 1800px) {
+    .container1 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 30px auto;
+        width: 80%;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        color: white;
+        padding: 10px;
+        
+    }
+
+    .parallax3{
+        align-items: center;
+        justify-content: center;
+    }
+
+
+}
+
+.catalogo img {
+    width: 300px;
+    height: 300px;
+    border-radius: 20%;
+
+}
+
+.nome h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, .5);
+    font-family: italic;
+    /* Sombra no texto */
+}
+
+.nome p {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#titulo1{
+    border: 2px solid white;
+    border-radius: 50px;
+    width: 23%;
+    margin-left: 35%;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 2.0);
+    color: darkorange;
+    font-family: italic;
+}
+
+@media(max-width: 1800px) {
+   
+    #titulo1{
+        text-align: center;
+        align-items: center;
+        margin:auto;
+        padding:auto;
+        padding: 5px;
+        width: max-content;
+    }
+
+}
+
+
+#titulo2 h4 {
+    border: 2px solid white;
+    border-radius: 50px;
+    width: 33%;
+    margin-left: 30%;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 2.0);
+    color: darkorange;
+    font-family: italic;
+}
+
+
+
+.video {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+}
+
+iframe {
+    border: orange 3px solid;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-start;
+    background-color: black;
+    width: 100%;
+}
+
+footer iframe {
+    border: 5px solid #333;
+    border-radius: 10px;
+    width: 30%;
+    height: 300px;
+}
+
+.formulario {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 1px solid darkorange;
+    width: 450px;
+    height: 340px;
+    border-radius: 5%;
+    margin: 30px;
+
+
+}
+
+input[type="radio"] {
+    margin: 10px;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid white;
+    border-radius: 4px;
+
+}
+
+
+button[type="submit"] {
+    background-color: darkorange;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px 14px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: bisque;
+}
+
+
+.botao-link {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    width: 100px;
+    height: auto;
+    margin: 5px;
+    padding: 5px;
+}
+
+.botao-link button[type="button"] {
+    border: 2px solid black;
+    background-color: #A9A9A9;
+    color: black;
+    border-radius: 10px;
+    width: 80px;
+    margin: 3px;
+    height: 20px;
+    cursor: pointer;
+}
+
+button[type="button"]:hover {
+    background-color: orange;
+    color: black;
+}
+
+
+
+
+.h3 {
+    color: darkorange;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 2.0);
+    margin: 25px;
+    font-family: italic;
+}
+
+#timeline {
+
+    width: 90%;
+    height: 30vh;
+    margin: 30px;
+    padding: 30px;
+    margin-left: 85px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+@media( max-width: 1800px){
+    #timeline{
+        flex-direction: column;
+        height: auto;
+        margin-right: 0;
+    }
+
+  
+
+    .timeline-item{
+        margin: 10px;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0;
+    }
+        
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+
+
+
+.timeline-content {
+    background-color: black;
+    padding: 15px;
+    border-left: 2px solid white;
+    width: 200px;
+    margin-left: 20px;
+}
+
+.timeline-content h2 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: white;
+    font-family: italic;
+}
+
+.timeline-content p {
+    font-size: 1em;
+    color: white;
+    margin-bottom: 10px;
+
+}
+
+
+.timeline h1 {
+    color: darkorange;
+    padding: 20px;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    font-family: italic;
+}
+
+h4 {
+    text-align: start;
+    font-size: 2rem;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 2.0);
+    color: darkorange;
+    font-family: italic;
+}
+
+footer{
+    display:flex;
+    justify-content: center;
+}
+
+@media(max-width: 1800px){
+    footer{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.fungo {
+    margin: 25px;
+}
+
+.fungo h3 {
+    color: darkorange;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 2.0);
+    font-family: italic;
+}
+
+.fungo p {
+    margin: 5px;
+}
+
+.imgfungo img {
+    margin: 5px;
+    width: 300px;
+}
+
+.hr {
+
+    border: 3px solid darkorange;
+    margin-bottom: 8px;
+}
+
+#infectados {
+    display: flex;
+}
+
+.textInfec {
+    margin: 10px;
+    text-align: left;
+    font-size: 1.42vh;
+}
+
+.ImgInfec img {
+    width: 80vh;
+    margin: auto;
+    padding: auto;
+}
+
+.h2Inf {
+    color: darkorange;
+    text-align: center;
+    font-style: italic;
+    text-shadow: 1px 2px 3px black
+}
+
+#jogabilidade {
+    display: flex;
+
+}
+
+.GameplayImg img {
+    flex-direction: column;
+    width: 80vh;
+    flex: 1;
+
+}
+
+.jogabtitulo {
+    color: darkorange;
+    text-align: center;
+    text-shadow: 1px 2px 3px black;
+    font-family: italic;
+}
+
+.textJog {
+    margin: 10px;
+    width: 2vh;
+    flex: 1;
+
+}
+
+#cultura {
+    display: flex;
+}
+
+.imgCult img {
+    width: 80vh;
+    flex: 1;
+}
+
+.textCult {
+    margin: 10px;
+    flex: 1;
+    width: 1.42vh;
+}
+
+.tituloCult {
+    text-align: center;
+    color: darkorange;
+    text-shadow: 1px 2px 3px black;
+    font-family: italic;
+}
+
+@media (max-width:2200px){
+    #infectados{
+        flex-direction: column;
+    }
+    .ImgInfec img{
+        width: 100%;
+        height: auto;
+    }
+
+
+    #jogabilidade{
+        
+        flex-direction: column;
+    }
+    .textJog{
+        width: 100%;
+        height: auto;
+    }
+    .GameplayImg img {
+        
+        width: 100%;
+        height: auto;
+    
+    }
+
+    #cultura{
+
+        flex-direction: column;
+    }
+
+    .imgCult img{
+        width: 100%;
+        height: auto;
+    }
+    .textCult{
+        width: 100%;
+        height: auto;
+    }
+}

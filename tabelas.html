@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Exemplo de Tabela com Colunas Mescladas</h2>
+
+    <table border="2" align="center">
+        <caption>Tabela de Nomes, Cidades e Informações Pessoais</caption> <!-- Adiciona uma descrição -->
+        <thead>
+            <tr align="center">
+                <th colspan="2">Nome / Cidade</th> <!-- Mescla 2 colunas -->
+                <th>Idade</th>
+                <th>Gênero</th>
+                <th colspan="2">Profissão e Hobbies</th> <!-- Mescla 2 colunas -->
+                <th colspan="2">Contato</th> <!-- Mescla 2 colunas -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr align="center">
+                <td colspan="2">João - São Paulo</td> <!-- Mescla Nome/Cidade -->
+                <td>25</td>
+                <td>Masculino</td>
+                <td colspan="2">Engenheiro | Fazer academia</td> <!-- Mescla Profissão e Hobbies -->
+                <td colspan="2">joao@email.com | Solteiro</td> <!-- Mescla Contato -->
+            </tr>
+            <tr align="center">
+                <td colspan="2">Maria - Rio de Janeiro</td>
+                <td>30</td>
+                <td>Feminino</td>
+                <td colspan="2">Mecânica | Jogar vôlei</td>
+                <td colspan="2">maria@email.com | Casada</td>
+            </tr>
+            <tr align="center">
+                <td colspan="2">Carlos - Belo Horizonte</td>
+                <td>28</td>
+                <td>Masculino</td>
+                <td colspan="2">Médico | Andar de skate</td>
+                <td colspan="2">carlos@email.com | Solteiro</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    `
+    
+    
+
+    <h2>Tabela Mesclando Duas Linhas</h2>
+
+    <table border="2" align="center">
+        <caption>Tabela de Contatos</caption> <!-- Descrição da tabela -->
+        <thead>
+            <tr align="center">
+                <th>Nome</th>
+                <th>Telefone</th>
+                <th>Celular</th>
+                <th>E-mail</th>
+                <th>Profissão</th>
+                <th>Operadora</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr align="center">
+                <td rowspan="2">João</td> <!-- João ocupa duas linhas -->
+                <td>(41) 99658-9689</td>
+                <td rowspan="2">Motorola</td> <!-- Celular ocupa duas linhas -->
+                <td rowspan="2">joao@email.com</td>
+                <td rowspan="2">Engenheiro</td>
+                <td rowspan="2">Vivo</td>
+            </tr>
+            <tr>
+                <td>(41) 99980-9545</td>
+            </tr>
+    
+            <tr align="center">
+                <td rowspan="2">Maria</td> <!-- Maria ocupa duas linhas -->
+                <td>(41) 99993-8975</td>
+                <td rowspan="2">iPhone</td> <!-- Celular ocupa duas linhas -->
+                <td rowspan="2">maria@email.com</td>
+                <td rowspan="2">Médica</td>
+                <td rowspan="2">Claro</td>
+            </tr>
+            <tr>
+                <td>(41) 99943-9512</td>
+            </tr>
+    
+            <tr align="center">
+                <td rowspan="2">Carlos</td> <!-- Carlos ocupa duas linhas -->
+                <td>(41) 99333-9970</td>
+                <td rowspan="2">Samsung</td> <!-- Celular ocupa duas linhas -->
+                <td rowspan="2">carlos@email.com</td>
+                <td rowspan="2">Professor</td>
+                <td rowspan="2">Tim</td>
+            </tr>
+            <tr>
+                <td>(41) 99123-9532</td>
+            </t
+    
+    
+
+</body>
+</html>
